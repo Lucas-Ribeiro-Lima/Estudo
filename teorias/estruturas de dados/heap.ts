@@ -1,9 +1,9 @@
-type HeapNode<T> = {
+export type HeapNode<T> = {
   weight: number
   val: T
 }
 
-interface Heap<T> {
+export interface Heap<T> {
   isEmpty: () => boolean
   peek: () => HeapNode<T>
   extractPeek: () => T
@@ -16,7 +16,7 @@ interface Heap<T> {
 }
 
 
-class MinHeap<T> implements Heap<T> {
+export class MinHeap<T> implements Heap<T> {
   private _heap: HeapNode<T>[] = []
   constructor() {}
 
@@ -88,23 +88,3 @@ class MinHeap<T> implements Heap<T> {
     }
   }
 }
-
-
-const wantToOrdenate = [7, 4, 3, 9, 11, 1, 2, 18]
-
-
-function heapSort<T>(arr: T[], heap: Heap<T>) {
-  const res: T[] = []
-  for(let value of arr) {
-    heap.insert(value, value as number)
-  }
-  while(!heap.isEmpty()) {
-    res.push(heap.extractPeek())
-  }
-  return res
-}
-
-const minHeap = new MinHeap()
-const ordenatedArray = heapSort(wantToOrdenate, minHeap)
-
-console.log(ordenatedArray)
