@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/teorias/exponenciacao/exponenciacaoRapida.ts",
+      "program": "${workspaceFolder}/leetcode/75.ts",
       "request": "launch",
       "runtimeArgs": ["--experimental-strip-types"],
       "skipFiles": [

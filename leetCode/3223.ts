@@ -2,12 +2,12 @@ function minimumLength(s: string): number {
     const stringMap: Record<string, number> = {}
     let totalLenght = s.length
     
-    for(let i = 0; i < s.length; i++) {
-      if(stringMap.hasOwnProperty(s[i])) {
-        stringMap[s[i]] += 1
+    for(let char of s) {
+      if(stringMap.hasOwnProperty(char)) {
+        stringMap[char] += 1
         continue
       }
-      stringMap[s[i]] = 1
+      stringMap[char] = 1
     }
 
     for(let value of Object.values(stringMap)) {
