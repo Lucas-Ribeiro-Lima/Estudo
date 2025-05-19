@@ -1,5 +1,4 @@
 //Reduz operações matematicas de exponenciação em log n
-//Função que realiza a operação desejada para reusabilidade, multiplicação de matrizes
 function exponenciacaoRapida(val: number, n: number): number {
   if(n === 0) return 1
   if(n === 1) return val
