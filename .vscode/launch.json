@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/teorias/dp/trocoMoedas.ts",
+      "program": "${workspaceFolder}/leetCode/119.ts",
       "request": "launch",
       "runtimeArgs": ["--experimental-strip-types"],
       "skipFiles": [
