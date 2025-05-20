@@ -1,4 +1,5 @@
 type StatesT = "idle" | "running" | "jumping" | "attacking" | "casting"
+type ActionT = "start" | "cast" | "attack" | "jump" | "land" | "finish" | "stop"
 
 export class Automato {
   private _currentState = "idle"
@@ -19,9 +20,9 @@ export class Automato {
     this._currentState = "finished"
   }
 
-  delta(action: string): string | void {
+  delta(action: ActionT) {
     const availableTransitions = this._transitions[this._currentState]
-    const nextState = availableTransitions?.[action]
+    const nextState = availableTransitions[action]
 
     if (!nextState) {
       this._fail()

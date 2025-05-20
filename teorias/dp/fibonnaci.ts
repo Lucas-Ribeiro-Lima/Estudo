@@ -9,9 +9,9 @@ function fib(n: number) {
 function fibDp(n: number, dp: number[]) {
   if(n === 0 || n === 1)
     return n
-  if(!dp[n]) 
+  if(!dp[n]) // Se o resultado não existe, então o calculamos.
     dp[n] = fibDp(n - 1, dp) + fibDp(n - 2, dp)
-  return dp[n]
+  return dp[n] // Se já temos o mesmo calculado, só retornamos.
 }
 
 console.log(fib(10))
