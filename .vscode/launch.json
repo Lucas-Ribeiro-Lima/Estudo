@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/leetCode/3335.ts",
+      "program": "${workspaceFolder}/leetCode/ts/27.ts",
       "request": "launch",
       "runtimeArgs": ["--experimental-strip-types"],
       "skipFiles": [
