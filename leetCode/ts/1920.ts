@@ -1,0 +1,1 @@
+const buildArray = (nums: number[]): number[] => Array(nums.length).fill(0).map((_, idx) => nums[nums[idx]])
