@@ -8,7 +8,7 @@ function computeLps(pattern: string): number[] {
       lps[i] = ++length
       i++
       continue
-    }
+    } 
 
     if(length > 0) {
       length = lps[length - 1]
