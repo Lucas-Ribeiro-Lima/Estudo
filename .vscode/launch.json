@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/leetCode/ts/1128.ts",
+      "program": "${workspaceFolder}/teorias/kmp/kmp.ts",
       "request": "launch",
       "runtimeArgs": ["--experimental-strip-types"],
       "skipFiles": [
