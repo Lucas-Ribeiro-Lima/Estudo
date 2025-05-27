@@ -1,0 +1,29 @@
+{
+  "name": "estudo",
+  "version": "1.0.0",
+  "description": "Estudos pessoais",
+  "main": "_.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Ribeiro-Lima/Estudo.git"
+  },
+  "keywords": [
+    "estudo",
+    "leetcode",
+    "ts",
+    "node",
+    "js",
+    "python",
+    "teoria"
+  ],
+  "author": "lucaslive974",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-Ribeiro-Lima/Estudo/issues"
+  },
+  "homepage": "https://github.com/Lucas-Ribeiro-Lima/Estudo#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21"
+  }
+}
