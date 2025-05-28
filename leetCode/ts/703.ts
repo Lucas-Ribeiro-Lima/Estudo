@@ -17,7 +17,7 @@ class KthLargest {
     nums.sort((a, b) => b - a)
     this.k = k
     for(let i = 0; i < k; i++) {
-      this.minHeap.add(nums[i])
+      this.minHeap.add(nums[i] ?? -100_000)
     }
   }
 
@@ -25,7 +25,7 @@ class KthLargest {
     if(this.minHeap.length < this.k) {
       this.minHeap.add(val)
     }
-    
+
     if(val > this.minHeap.peek()) {
       this.minHeap.extract(val)
     }
