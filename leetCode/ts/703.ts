@@ -25,8 +25,9 @@ class KthLargest {
     if(this.minHeap.length < this.k) {
       this.minHeap.add(val)
     }
+    
     if(val > this.minHeap.peek()) {
-      this.minHeap.changeKthMajor(val)
+      this.minHeap.extract(val)
     }
 
     return this.minHeap.peek()
@@ -49,7 +50,7 @@ class MinHeap {
     this.heapifyUp()
   }
 
-  changeKthMajor(val: number) {
+  extract(val: number) {
     if(this.isEmpty()) return undefined
 
     this._heap[0] = val
@@ -98,7 +99,7 @@ class MinHeap {
       let rightIdx = this.getRightIdx(idx)
       let smaller = leftIdx
 
-      if(leftIdx > this._heap.length) break
+      if(leftIdx > this._heap.length - 1) break
 
       if(this._heap[rightIdx]  < this._heap[smaller]) smaller = rightIdx
 
